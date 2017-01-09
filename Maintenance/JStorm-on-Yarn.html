@@ -225,7 +225,7 @@ under the License.
   
   
   <div class="col-md-8 col-md-offset-2 text">
-    <h1>How to create/remove/enlarge/reduce one JStorm logic cluster on yarn?</h1>
+    <h1>如何部署onyarn模式的Jstorm逻辑集群并动态伸缩容量</h1>
 	<ul id="markdown-toc">
   <li><a href="#function-points" id="markdown-toc-function-points">function points</a>    <ul>
       <li><a href="#create-a-cluster" id="markdown-toc-create-a-cluster">Create a cluster</a></li>
@@ -339,7 +339,8 @@ In fact, these two methods have similar implements. In essence, it specified the
 	  
 <p>if you need enable nimbus auto restart, pleas add the following configuration</p>
 
-<pre><code>blobstore.dir: /yourhdfsdir
+<pre><code>
+blobstore.dir: /yourhdfsdir
 blobstore.hdfs.hostname: yourhdfshost
 blobstore.hdfs.port: yourhdfsport
 </code></pre>
